@@ -1,0 +1,334 @@
+/* ======================
+   GLOBAL
+====================== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f7f3;
+    color: #333;
+}
+
+/* ======================
+   NAVBAR
+====================== */
+.navbar-custom {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.brand-main {
+    color: #8b7355;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #555 !important;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #8b7355 !important;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #8b7355;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ======================
+   BUTTON
+====================== */
+.btn-primary-custom {
+    background-color: #8b7355;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary-custom:hover {
+    opacity: 0.9;
+}
+
+/* ======================
+   HERO
+====================== */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #666;
+}
+
+/* ======================
+   HERO GRID LAYOUT
+====================== */
+.hero-modern {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 30px;
+    color: white;
+}
+
+/* LEFT HERO (BESAR) */
+.hero-left {
+    height: 100%;
+    min-height: 420px;
+    background: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') center/cover;
+}
+
+/* RIGHT TOP */
+.hero-right-top {
+    height: 200px;
+    background: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4') center/cover;
+}
+
+/* RIGHT BOTTOM */
+.hero-right-bottom {
+    height: 200px;
+    background: url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=792&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
+}
+
+/* overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* title */
+.hero-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    color: #ddd;
+}
+
+/* small title */
+.hero-small-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* button besar */
+.btn-hero {
+    background: #8b7355;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* button kecil */
+.btn-hero-sm {
+    background: white;
+    color: #333;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 768px) {
+    .hero-left {
+        min-height: 300px;
+    }
+
+    .hero-right-top,
+    .hero-right-bottom {
+        height: 150px;
+    }
+
+    .hero-title {
+        font-size: 22px;
+    }
+}
+
+/* ======================
+   SECTION
+====================== */
+.section {
+    padding: 60px 20px;
+}
+
+/* ======================
+   CATEGORY
+====================== */
+.category-card {
+    background-color: #f4f1ea;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ======================
+   PRODUCT
+====================== */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.product-card img {
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* PRODUCT BADGE */
+.product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #8b7355;
+    color: white;
+    padding: 4px 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+/* ======================
+   INSPIRATION
+====================== */
+.inspiration-card {
+    background-color: #f4f1ea;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.inspiration-card:hover {
+    transform: scale(1.03);
+}
+
+/* ======================
+   FOOTER CTA (MODERN)
+====================== */
+.footer-cta {
+    margin: 80px 40px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.footer-overlay {
+    background: linear-gradient(135deg, #3a6ea5, #1e3c72);
+    padding: 80px 20px;
+    position: relative;
+}
+
+/* texture effect */
+.footer-overlay::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    opacity: 0.2;
+}
+
+.footer-cta h4 {
+    font-weight: 600;
+}
+
+.footer-cta p {
+    opacity: 0.9;
+}
+
+/* button */
+.btn-footer {
+    background: #ffffff;
+    color: #1e3c72;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-footer:hover {
+    background: #f1f1f1;
+}
+
+/* ======================
+   FOOTER
+====================== */
+.footer-bottom {
+    background: #fff;
+    border-top: 1px solid #eee;
+    color: #777;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
+
+/* PAGINATION CUSTOM */
+.pagination .page-link {
+    color: #8b7355;
+    border-radius: 10px;
+    margin: 0 3px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #8b7355;
+    border-color: #8b7355;
+    color: #fff;
+}
+
